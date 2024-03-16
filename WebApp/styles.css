@@ -1,81 +1,68 @@
 body {
 background: #AAAAAA;
 font-family: Verdana, "sans-serif";
-display: flex;
-justify-content: center;
+padding-left: 20px;
+padding-right: 20px;
 }
 
 section h1 {
 font-weight: 500;
+font-size: 1.4em;
 }
 
 section p {
 font-weight: 300;
+font-size:0.9em;
 }
 
-form div {
-width: 100%;
-display: flex;
-flex-direction: column;
-min-height: 83px;
-margin-top: 25px;
+form {
+	width: 40%;
+	min-width: 400px;
+	margin: 30px auto;
 }
 
-form div > label {
-margin-bottom: 7px;
-font-weight: 600;
+form label {
+margin: 20px 5px 7px 5px;
+font-weight: 400;
+display: block;
+font-style: italic;
 }
 
-form div > input, form div > select {
-background: #FFD9D9;
+form input, form select {
+background-color: antiquewhite;
 border: none;
 border-radius: 5px;
-font-size: 16px;
-font-weight: 500;
+font-size: 1em;
+font-weight: 300;
 font-family: Verdana, "sans-serif";
 box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
-}
-
-form div > input, form div > select {
-height: 50px;
+height: 30px;
 padding-left: 10px;
 }
 
-form div > select {
-appearance: none;
-background-size: 15px;
-background-position: right 10px top 50%;
-background-repeat: no-repeat;
+form input {
+	width: 95%;
 }
 
-
-form div > input::placeholder {
-color: grey;
+form input#log {
+	width: 70%;
 }
 
-form div > select:invalid {
-color: white;
+form p#suffixe {
+	display: inline;
 }
 
-form div > select option {
-background: white;
-color: #303030;
+form input::placeholder {
+	color: grey;
 }
 
-form div:last-child {
-align-items:center;
-margin-top: 20px;
+form select:invalid {
+	color: white;
 }
 
-form submit {
-width: 450px;
-max-width: 500px;
-height: 60px;
-font-weight: 700;
-font-size: 28px;
-background: white;
-border: rgba(48, 48, 48, 0.5) solid 1px;
-border-radius: 5px;
-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-color: #303030;
+form input[type="submit"] {
+/*display: block;*/
+width: 100px;
+margin: 40px 30px 0px 0px;
+float: right;
 }
